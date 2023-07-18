@@ -1,0 +1,130 @@
+version: '3'
+
+services:
+  # Mosquitto Stack
+  mosquitto-broker:
+    container_name: mosquitto-broker
+    build:
+      context: mosquitto
+      dockerfile: Dockerfile
+    env_file:
+      - mosquitto/.env
+    # environment:
+    #   - USER=${USER}
+    #   - PASSW=${PASSW}
+    volumes:
+      - type: bind
+        source: ./mosquitto/config
+        target: /mosquitto/config/
+        read_only: false
+      - type: bind
+        source: ./mosquitto/log
+        target: /mosquitto/log/
+        read_only: false
+      - type: volume
+        source: data_network
+        target: /mosquitto/data/
+    ports:
+      - "8883:8883"
+      - "9001:9001"
+    networks:
+      - iot_networks
+    profiles:
+      - "mosquitto-stack"
+
+  mosquitto-pub:
+    image: eclipse-mosquitto:latest
+    command: sh -c "mosquitto_pub -h mosquitto-broker -t test -m 'Hello World' -u admin -P NEWPASSWORD"
+    depends_on:
+      - mosquitto-broker
+      - mosquitto-sub
+    networks:
+      - iot_networks
+    profiles:
+      - "mosquitto-stack"
+
+  mosquitto-sub:
+    image: eclipse-mosquitto:latest
+    command: sh -c "mosquitto_sub -h mosquitto-broker -t test -u admin -P NEWPASSWORD"
+    depends_on:
+      - mosquitto-broker
+    networks:
+      - iot_networks
+    profiles:
+      - "mosquitto-stack"
+
+  rabbitmq:
+    image: "rabbitmq:management"
+    container_name: "rabbitmq"
+    env_file:
+      - "rabbitmq/.env"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - "iot_networks"
+  
+    profiles:
+      - "rabbitmq-stack"
+
+  emqx:
+    container_name: "emqx"
+    image: "emqx:latest"
+    profiles:
+      - "emqx-stack"
+    
+
+  # # Database
+  # influxdb:
+  #   image: influxdb:latest
+  #   container_name: influxdb
+  #   ports:
+  #     - "8083:8083"
+  #     - "8086:8086"
+  #     - "8090:8090"
+  #     - "2003:2003"
+  #   env_file:
+  #     - "influxdb/.env"
+  #   networks:
+  #     - iot_networks
+  #   depends_on:
+  #     - rabbitmq
+  #   # volumes:
+  #   #   # Data persistency
+  #   #   # sudo mkdir -p /srv/docker/influxdb/data
+  #   #   - /srv/docker/influxdb/data:/var/lib/influxdb
+
+  # telegraf:
+  #   image: telegraf:latest
+  #   container_name: telegraf
+  #   depends_on:
+  #     - influxdb
+  #   networks:
+  #     - iot_networks
+  #   # volumes:
+  #   #   - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+
+  # grafana:
+  #   image: grafana/grafana:latest
+  #   container_name: grafana
+  #   ports:
+  #     - "3000:3000"
+  #   env_file:
+  #     - "grafana/.env"
+  #   user: "0"
+  #   depends_on:
+  #     - influxdb
+  #     - rabbitmq
+  #   networks:
+  #     - iot_networks
+  #   # volumes:
+  #   #   # Data persistency
+  #   #   # sudo mkdir -p /srv/docker/grafana/data; chown 472:472 /srv/docker/grafana/data
+  #   #   - /srv/docker/grafana/data:/var/lib/grafana
+
+networks:
+  iot_networks:
+    driver: bridge
+volumes:
+  data_network:
+    name: "iot_data_network"

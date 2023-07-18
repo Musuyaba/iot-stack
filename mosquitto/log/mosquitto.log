@@ -1,0 +1,190 @@
+1689656914: mosquitto version 2.0.15 starting
+1689656914: Config loaded from /mosquitto/config/mosquitto.conf.
+1689656914: Error: Invalid password hash type for user admin, removing entry.
+1689656914: Opening ipv4 listen socket on port 1883.
+1689656914: Opening ipv6 listen socket on port 1883.
+1689656914: mosquitto version 2.0.15 running
+1689656934: mosquitto version 2.0.15 terminating
+1689656934: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689656937: mosquitto version 2.0.15 starting
+1689656937: Config loaded from /mosquitto/config/mosquitto.conf.
+1689656937: Error: Invalid password hash type for user admin, removing entry.
+1689656937: Opening ipv4 listen socket on port 1883.
+1689656937: Opening ipv6 listen socket on port 1883.
+1689656937: mosquitto version 2.0.15 running
+1689656939: mosquitto version 2.0.15 terminating
+1689656939: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689656942: mosquitto version 2.0.15 starting
+1689656942: Config loaded from /mosquitto/config/mosquitto.conf.
+1689656942: Error: Invalid password hash type for user admin, removing entry.
+1689656942: Opening ipv4 listen socket on port 1883.
+1689656942: Opening ipv6 listen socket on port 1883.
+1689656942: mosquitto version 2.0.15 running
+1689657187: mosquitto version 2.0.15 terminating
+1689657187: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689657188: mosquitto version 2.0.15 starting
+1689657188: Config loaded from /mosquitto/config/mosquitto.conf.
+1689657188: Error: Invalid password hash type for user admin, removing entry.
+1689657188: Opening ipv4 listen socket on port 1883.
+1689657188: Opening ipv6 listen socket on port 1883.
+1689657188: mosquitto version 2.0.15 running
+1689657367: mosquitto version 2.0.15 terminating
+1689657367: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689657404: mosquitto version 2.0.15 starting
+1689657404: Config loaded from /mosquitto/config/mosquitto.conf.
+1689657404: Error: Invalid password hash type for user admin, removing entry.
+1689657404: Opening ipv4 listen socket on port 1883.
+1689657404: Opening ipv6 listen socket on port 1883.
+1689657404: mosquitto version 2.0.15 running
+1689657515: mosquitto version 2.0.15 terminating
+1689657515: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689657571: mosquitto version 2.0.15 starting
+1689657571: Config loaded from /mosquitto/config/mosquitto.conf.
+1689657571: Error: Invalid password hash type for user admin, removing entry.
+1689657571: Opening ipv4 listen socket on port 1883.
+1689657571: Opening ipv6 listen socket on port 1883.
+1689657571: mosquitto version 2.0.15 running
+1689657771: mosquitto version 2.0.15 terminating
+1689657771: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689657981: mosquitto version 2.0.15 starting
+1689657981: Config loaded from /mosquitto/config/mosquitto.conf.
+1689657981: Opening ipv4 listen socket on port 1883.
+1689657981: Opening ipv6 listen socket on port 1883.
+1689657981: mosquitto version 2.0.15 running
+1689657981: New connection from 172.19.0.4:33952 on port 1883.
+1689657981: Client auto-52022364-44BE-1A97-FC63-A2E8E25609A8 disconnected, not authorised.
+1689657982: New connection from 172.19.0.3:59622 on port 1883.
+1689657982: Client auto-02AD7C50-4744-7920-88F5-FA92831A3B7A disconnected, not authorised.
+1689657988: mosquitto version 2.0.15 terminating
+1689657988: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689658013: mosquitto version 2.0.15 starting
+1689658013: Config loaded from /mosquitto/config/mosquitto.conf.
+1689658013: Opening ipv4 listen socket on port 1883.
+1689658013: Opening ipv6 listen socket on port 1883.
+1689658013: mosquitto version 2.0.15 running
+1689658014: New connection from 172.19.0.3:52806 on port 1883.
+1689658014: New client connected from 172.19.0.3:52806 as auto-3B3E5B32-4C8A-6531-6BBB-10B39D5806E4 (p2, c1, k60, u'admin').
+1689658014: Client auto-3B3E5B32-4C8A-6531-6BBB-10B39D5806E4 disconnected.
+1689658014: New connection from 172.19.0.4:54198 on port 1883.
+1689658014: New client connected from 172.19.0.4:54198 as auto-EE9E3436-773E-4335-0F5E-27EFB199D26E (p2, c1, k60, u'admin').
+1689658075: Client auto-EE9E3436-773E-4335-0F5E-27EFB199D26E disconnected.
+1689658076: mosquitto version 2.0.15 terminating
+1689658076: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689658078: mosquitto version 2.0.15 starting
+1689658078: Config loaded from /mosquitto/config/mosquitto.conf.
+1689658078: Opening ipv4 listen socket on port 1883.
+1689658078: Opening ipv6 listen socket on port 1883.
+1689658078: mosquitto version 2.0.15 running
+1689658079: New connection from 172.19.0.4:36700 on port 1883.
+1689658079: New client connected from 172.19.0.4:36700 as auto-3CB297D9-00DF-4933-B09F-0B53663CCA5D (p2, c1, k60, u'admin').
+1689658079: Client auto-3CB297D9-00DF-4933-B09F-0B53663CCA5D disconnected.
+1689658079: New connection from 172.19.0.3:45392 on port 1883.
+1689658079: New client connected from 172.19.0.3:45392 as auto-B9A78A96-0159-CE22-A3B8-966815DE5859 (p2, c1, k60, u'admin').
+1689658167: New connection from 172.19.0.4:49236 on port 1883.
+1689658167: New client connected from 172.19.0.4:49236 as auto-A7EC5A01-9FC6-9AD1-A997-DF1EBB722089 (p2, c1, k60, u'admin').
+1689658167: Client auto-A7EC5A01-9FC6-9AD1-A997-DF1EBB722089 disconnected.
+1689658172: New connection from 172.19.0.4:51160 on port 1883.
+1689658172: New client connected from 172.19.0.4:51160 as auto-CA162B2C-43E9-C544-52BF-85B08C7E5724 (p2, c1, k60, u'admin').
+1689658172: Client auto-CA162B2C-43E9-C544-52BF-85B08C7E5724 disconnected.
+1689661759: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689661806: New connection from 172.19.0.4:60178 on port 1883.
+1689661806: Client auto-16A8F1AD-B1BE-BD6E-EEBF-542B61EEB76E disconnected, not authorised.
+1689661924: New connection from 172.19.0.4:57822 on port 1883.
+1689661924: Client auto-32A7503D-A89C-8F80-B8E5-DDFB5A734D39 disconnected, not authorised.
+1689661933: New connection from 172.19.0.4:45050 on port 1883.
+1689661933: Client auto-0FC7F333-BE14-5172-CD28-9230D3ACCA89 disconnected, not authorised.
+1689661959: New connection from 172.19.0.4:42562 on port 1883.
+1689661959: Client auto-7305D24A-5E0C-92D3-37E8-85475280268A disconnected, not authorised.
+1689661984: New connection from 172.19.0.4:50168 on port 1883.
+1689661984: New client connected from 172.19.0.4:50168 as auto-31516512-4FF1-5A0B-3B89-B8CD81C771DA (p2, c1, k60, u'admin').
+1689661984: Client auto-31516512-4FF1-5A0B-3B89-B8CD81C771DA disconnected.
+1689661988: Client auto-B9A78A96-0159-CE22-A3B8-966815DE5859 disconnected.
+1689661988: mosquitto version 2.0.15 terminating
+1689661988: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689661991: mosquitto version 2.0.15 starting
+1689661991: Config loaded from /mosquitto/config/mosquitto.conf.
+1689661991: Opening ipv4 listen socket on port 1883.
+1689661991: Opening ipv6 listen socket on port 1883.
+1689661991: mosquitto version 2.0.15 running
+1689661992: New connection from 172.19.0.4:45736 on port 1883.
+1689661992: New client connected from 172.19.0.4:45736 as auto-8485A815-A73F-F0FE-B706-8DF4556E02D1 (p2, c1, k60, u'admin').
+1689661992: Client auto-8485A815-A73F-F0FE-B706-8DF4556E02D1 disconnected.
+1689661992: New connection from 172.19.0.3:58952 on port 1883.
+1689661992: New client connected from 172.19.0.3:58952 as auto-F83EF01B-E397-87B1-C000-8349BF78F219 (p2, c1, k60, u'admin').
+1689661995: New connection from 172.19.0.4:45740 on port 1883.
+1689661995: New client connected from 172.19.0.4:45740 as auto-E482573E-FED4-4C7B-79DE-7196EE58FF4B (p2, c1, k60, u'user').
+1689661995: Client auto-E482573E-FED4-4C7B-79DE-7196EE58FF4B disconnected.
+1689662126: Client auto-F83EF01B-E397-87B1-C000-8349BF78F219 disconnected.
+1689662127: mosquitto version 2.0.15 terminating
+1689662127: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689668192: mosquitto version 2.0.15 starting
+1689668192: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668192: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668192: Error opening password file "/mosquitto/config/password.txt".
+1689668253: mosquitto version 2.0.15 starting
+1689668253: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668253: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668253: Error opening password file "/mosquitto/config/password.txt".
+1689668401: mosquitto version 2.0.15 starting
+1689668401: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668401: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668401: Error opening password file "/mosquitto/config/password.txt".
+1689668553: mosquitto version 2.0.15 starting
+1689668553: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668553: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668553: Error opening password file "/mosquitto/config/password.txt".
+1689668618: mosquitto version 2.0.15 starting
+1689668618: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668618: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668618: Error opening password file "/mosquitto/config/password.txt".
+1689668631: mosquitto version 2.0.15 starting
+1689668631: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668631: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668631: Error opening password file "/mosquitto/config/password.txt".
+1689668713: mosquitto version 2.0.15 starting
+1689668713: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668713: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668713: Error opening password file "/mosquitto/config/password.txt".
+1689668730: mosquitto version 2.0.15 starting
+1689668730: Config loaded from /mosquitto/config/mosquitto.conf.
+1689668730: Error: Unable to open pwfile "/mosquitto/config/password.txt".
+1689668730: Error opening password file "/mosquitto/config/password.txt".
+1689669656: mosquitto version 2.0.15 starting
+1689669656: Config loaded from /mosquitto/config/mosquitto.conf.
+1689669656: Opening ipv4 listen socket on port 1883.
+1689669656: Opening ipv6 listen socket on port 1883.
+1689669656: mosquitto version 2.0.15 running
+1689669664: New connection from 172.19.0.4:40604 on port 1883.
+1689669664: New client connected from 172.19.0.4:40604 as auto-32338D52-7962-7C75-4FA0-5C18A7318ED9 (p2, c1, k60, u'admin').
+1689669664: New connection from 172.19.0.3:44240 on port 1883.
+1689669664: New client connected from 172.19.0.3:44240 as auto-27A18B9D-241C-6B8A-0B27-F37CF51E32FC (p2, c1, k60, u'admin').
+1689669664: Client auto-27A18B9D-241C-6B8A-0B27-F37CF51E32FC disconnected.
+1689669868: Client auto-32338D52-7962-7C75-4FA0-5C18A7318ED9 disconnected.
+1689669869: mosquitto version 2.0.15 terminating
+1689669869: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689670219: mosquitto version 2.0.15 starting
+1689670219: Config loaded from /mosquitto/config/mosquitto.conf.
+1689670219: Opening ipv4 listen socket on port 1883.
+1689670219: Opening ipv6 listen socket on port 1883.
+1689670219: mosquitto version 2.0.15 running
+1689670220: New connection from 172.19.0.3:41790 on port 1883.
+1689670220: New client connected from 172.19.0.3:41790 as auto-CCFAA571-07E8-BD47-1FFC-4DC021835B6D (p2, c1, k60, u'admin').
+1689670222: New connection from 172.19.0.4:37742 on port 1883.
+1689670222: New client connected from 172.19.0.4:37742 as auto-BA5CE50D-F94E-C0D5-C0FB-74FB40E6AF91 (p2, c1, k60, u'admin').
+1689670222: Client auto-BA5CE50D-F94E-C0D5-C0FB-74FB40E6AF91 disconnected.
+1689670450: Client auto-CCFAA571-07E8-BD47-1FFC-4DC021835B6D disconnected.
+1689670451: mosquitto version 2.0.15 terminating
+1689670451: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1689670469: mosquitto version 2.0.15 starting
+1689670469: Config loaded from /mosquitto/config/mosquitto.conf.
+1689670469: Opening ipv4 listen socket on port 1883.
+1689670469: Opening ipv6 listen socket on port 1883.
+1689670469: mosquitto version 2.0.15 running
+1689670470: New connection from 172.19.0.3:34592 on port 1883.
+1689670470: New client connected from 172.19.0.3:34592 as auto-41DCF724-02F6-183D-93EC-FF5E83D4132E (p2, c1, k60, u'admin').
+1689670472: New connection from 172.19.0.4:41594 on port 1883.
+1689670472: New client connected from 172.19.0.4:41594 as auto-015E1F40-EFDE-B08A-743A-DFD9073B4916 (p2, c1, k60, u'admin').
+1689670472: Client auto-015E1F40-EFDE-B08A-743A-DFD9073B4916 disconnected.
+1689670604: Client auto-41DCF724-02F6-183D-93EC-FF5E83D4132E disconnected.
+1689670605: mosquitto version 2.0.15 terminating
+1689670605: Saving in-memory database to /mosquitto/data//mosquitto.db.
