@@ -17,6 +17,10 @@ services:
         target: /mosquitto/config/mosquitto.conf
         read_only: false
       - type: bind
+        source: ./cert/mosquitto-certs
+        target: /mosquitto/certs/
+        read_only: false
+      - type: bind
         source: ./mosquitto/log
         target: /mosquitto/log/
         read_only: false
@@ -29,27 +33,54 @@ services:
     networks:
       - iot_networks
     profiles:
-      - "mosquitto-stack"
+      - mosquitto-stack
+    depends_on:
+      - generator-ca-ssl
 
   mosquitto-pub:
-    image: eclipse-mosquitto:latest
+    container_name: mosquitto-pub
+    image: eclipse-mosquitto:2.0
+    volumes:
+      - type: bind
+        source: ./cert/mosquitto-certs
+        target: /mosquitto/certs/
+        read_only: false
     depends_on:
       - mosquitto-broker
       - mosquitto-sub
     networks:
       - iot_networks
     profiles:
-      - "mosquitto-stack"
+      - mosquitto-stack
 
   mosquitto-sub:
-    image: eclipse-mosquitto:latest
-    command: sh -c "mosquitto_sub -h mosquitto-broker -t test -u admin -P admin"
+    container_name: mosquitto-sub
+    image: eclipse-mosquitto:2.0
+    volumes:
+      - type: bind
+        source: ./cert/mosquitto-certs
+        target: /mosquitto/certs/
+        read_only: false
+    command: sh -c "mosquitto_sub -h mosquitto-broker -t topics/iot -u admin -P admin --cafile /mosquitto/certs/ca.crt --tls-version tlsv1.2"
     depends_on:
       - mosquitto-broker
     networks:
       - iot_networks
     profiles:
-      - "mosquitto-stack"
+      - mosquitto-stack
+
+  generator-ca-ssl:
+    container_name: generator-ca-ssl
+    build:
+      context: cert
+      dockerfile: Dockerfile
+    networks:
+      - iot_networks
+    volumes:
+      - type: bind
+        source: ./cert/mosquitto-certs
+        target: /certs/
+        read_only: false
 
   rabbitmq:
     image: "rabbitmq:management"
