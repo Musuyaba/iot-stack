@@ -1,8 +1,7 @@
 version: '3'
 
 services:
-  # Mosquitto Stack
-  mosquitto-broker:
+  mosquitto-broker: # Mosquitto Stack
     container_name: mosquitto-broker
     build:
       context: mosquitto
@@ -12,6 +11,10 @@ services:
     env_file:
       - "./mosquitto/.env"
     volumes:
+      - type: bind
+        source: ./cert/mosquitto/generated
+        target: /mosquitto/certs/
+        read_only: false
       - type: bind
         source: ./mosquitto/config/mosquitto.conf
         target: /mosquitto/config/mosquitto.conf
@@ -29,47 +32,77 @@ services:
     networks:
       - iot_networks
     profiles:
-      - "mosquitto-stack"
+      - mosquitto-stack
+    depends_on:
+      ssl:
+        condition: service_completed_successfully
 
-  mosquitto-pub:
-    image: eclipse-mosquitto:latest
+  # mosquitto-pub: # Mosquitto Stack
+  #   container_name: mosquitto-pub
+  #   image: eclipse-mosquitto:2.0
+  #   volumes:
+  #     - type: bind
+  #       source: ./cert/mosquitto
+  #       target: /mosquitto/certs/
+  #       read_only: false
+  #   depends_on:
+  #     - mosquitto-broker
+  #     - mosquitto-sub
+  #   networks:
+  #     - iot_networks
+  #   profiles:
+  #     - mosquitto-stack
+
+  mosquitto-sub: # Mosquitto Stack
+    container_name: mosquitto-sub
+    image: eclipse-mosquitto:2.0
+    volumes:
+      - type: bind
+        source: ./cert/mosquitto/generated
+        target: /mosquitto/certs/
+        read_only: false
+    command: sh -c "mosquitto_sub -h mosquitto-broker -t topics/iot -u admin -P admin --cert /mosquitto/certs/ca.crt --key /mosquitto/certs/client.key --tls-version tlsv1.2"
     depends_on:
       - mosquitto-broker
-      - mosquitto-sub
     networks:
       - iot_networks
     profiles:
-      - "mosquitto-stack"
+      - mosquitto-stack
 
-  mosquitto-sub:
-    image: eclipse-mosquitto:latest
-    command: sh -c "mosquitto_sub -h mosquitto-broker -t test -u admin -P admin"
-    depends_on:
-      - mosquitto-broker
+  ssl: # Mosquitto Stack
+    container_name: ssl
+    build:
+      context: cert/mosquitto
+      dockerfile: Dockerfile
     networks:
       - iot_networks
+    volumes:
+      - type: bind
+        source: ./cert/mosquitto/generated
+        target: /cert/mosquitto/generated
+        read_only: false
     profiles:
-      - "mosquitto-stack"
+      - mosquitto-stack
 
-  rabbitmq:
-    image: "rabbitmq:management"
-    container_name: "rabbitmq"
-    env_file:
-      - "rabbitmq/.env"
-    ports:
-      - "5672:5672"
-      - "15672:15672"
-    networks:
-      - "iot_networks"
+  # rabbitmq:
+  #   image: "rabbitmq:management"
+  #   container_name: "rabbitmq"
+  #   env_file:
+  #     - "rabbitmq/.env"
+  #   ports:
+  #     - "5672:5672"
+  #     - "15672:15672"
+  #   networks:
+  #     - "iot_networks"
   
-    profiles:
-      - "rabbitmq-stack"
+  #   profiles:
+  #     - "rabbitmq-stack"
 
-  emqx:
-    container_name: "emqx"
-    image: "emqx:latest"
-    profiles:
-      - "emqx-stack"
+  # emqx:
+  #   container_name: "emqx"
+  #   image: "emqx:latest"
+  #   profiles:
+  #     - "emqx-stack"
     
 
   # # Database
@@ -126,3 +159,4 @@ networks:
 volumes:
   data_network:
     name: "iot_data_network"
+

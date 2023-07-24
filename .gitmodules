@@ -1,2 +1,4 @@
 [submodule "mosquitto-stack"]
+	path = mosquitto-stack
+	url = https://github.com/Musuyaba/mosquitto-stack
 	branch = main
