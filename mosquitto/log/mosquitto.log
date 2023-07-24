@@ -1,6 +1,0 @@
-1689840502: New connection from 172.23.0.4:53510 on port 1883.
-1689840502: New client connected from 172.23.0.4:53510 as auto-5C814169-CDB7-91E2-5081-6B9446A607E6 (p2, c1, k60, u'user').
-1689840502: Client auto-5C814169-CDB7-91E2-5081-6B9446A607E6 disconnected.
-1689840519: New connection from 172.23.0.4:35474 on port 8883.
-1689840519: New client connected from 172.23.0.4:35474 as auto-23561D1D-850E-30CC-A0F8-FBA5CD5B7A32 (p2, c1, k60, u'admin').
-1689840519: Client auto-23561D1D-850E-30CC-A0F8-FBA5CD5B7A32 disconnected.
