@@ -1,0 +1,2 @@
+[submodule "mosquitto-stack"]
+	branch = main
