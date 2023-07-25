@@ -1,5 +1,5 @@
 # IoT Stack by Musuyaba
-
+Read this in other languages: [English](README.md), [Indonesia](README.id.md),  
 ## Table of Contents
 * [About The Project](#about-the-project)
 * [Requirements](#requirements)
@@ -18,11 +18,8 @@ This project included in my portofolio as IoT Engineer, of course what I can use
 - Logging Mosquitto Broker
 - Securing Connection using OpenSSL
 - Example on C++, Python, and Node.js
-
-## Usage
-Every sub-repo have different stack, 
-example:
 ```bash
+# For mosquitto-stack
 cd mosquitto-stack
 ```
 
@@ -32,6 +29,7 @@ cd mosquitto-stack
 - [ ] Work on EMQX-Stack
 - [ ] Work on RabbitMQ-Stack
 - [ ] Work on Kafka-Stack
+- [ ] Work on Socker-Stack
 
 ### Done ✓
 - [x] Create Readme.md
@@ -44,27 +42,8 @@ Distributed under the MIT License.
 
 <!-- CONTACT -->
 ## Contact
-Please, if you had any hestitate contact me on: 
+Tolong jangan segan untuk menghubungi saya melalui:
 
-[Telegram @musuyaba](https://t.me/musuyaba) - m.sulthon.yb@gmail.com
-
-
-<!-- # Mosquitto - Authentication
-## docker compose --profile mosquitto-stack config
-## docker compose --profile mosquitto-stack up --build -d
-## docker compose logs -f mosquitto-sub
-## docker compose exec mosquitto-broker mosquitto_passwd -b /mosquitto/config/password.txt newUser newUser
-## docker restart mosquitto-broker
-## docker compose exec mosquitto-pub mosquitto_pub -h mosquitto-broker -t topics/iot -m "Wellcome to Hell as admin" -u admin -P admin --cafile /mosquitto/certs/ca.crt --tls-version tlsv1.2 -d
-## docker compose exec mosquitto-pub mosquitto_pub -h mosquitto-broker -t topics/iot -m "Wellcome to Hell as user" -u user -P user -d
-## docker compose exec mosquitto-pub mosquitto_pub -h mosquitto-broker -t topics/iot -m "Wellcome to Hell as newUser" -u newUser -P newUser -d
-## docker compose exec mosquitto-broker mosquitto_passwd -D /mosquitto/config/password.txt user
-## docker restart mosquitto-broker
-## docker compose exec mosquitto-pub mosquitto_pub -h mosquitto-broker -t topics/iot -m "Wellcome to Hell as user" -u user -P user
-## docker compose --profile mosquitto-stack down
-
-RabbitMQ - Telegraf - InfluxDB Grafana
-EMQX - Telegraf - InfluxDB Grafana
-
-Kafka
-# iot-stack -->
+- [Website](https://musuyaba.my.id)
+- m.sulthon.yb@gmail.com 
+- [Telegram @musuyaba](https://t.me/musuyaba)
