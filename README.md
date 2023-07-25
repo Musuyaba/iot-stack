@@ -42,7 +42,7 @@ Distributed under the MIT License.
 
 <!-- CONTACT -->
 ## Contact
-Tolong jangan segan untuk menghubungi saya melalui:
+Please, ask me anything on: 
 
 - [Website](https://musuyaba.my.id)
 - m.sulthon.yb@gmail.com 
