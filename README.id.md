@@ -13,21 +13,25 @@ Publik repo ini saya lampirkan sebagai portofolio saya sebagai IoT Engineer. Di 
 ```bash
 docker -v
 ```
-> Expected Output: Docker version 24.0.2, build cb74dfc
+> Expected Output: 
+>>Docker version 24.0.2, build cb74dfc
 ```bash
 cpp --version 
 ```
-> Expected Output: cpp (Rev7, Built by MSYS2 project) 13.1.0
+> Expected Output: 
+>> cpp (Rev7, Built by MSYS2 project) 13.1.0
 - Nodejs (Opsional)
 ```bash
 node -v
 ```
-> Expected Output: v16.15.0
+> Expected Output: 
+>>v16.15.0
 - Python (Opsional)
 ```bash
 $ python --version
 ```
-> Expected Output: Python 3.10.4
+> Expected Output: 
+>>Python 3.10.4
 
 ## Penggunaan
 Cloning repo ini terlebih dahulu atau langsung clone repo stack yg dibutuhkan
@@ -37,7 +41,8 @@ $ cd iot-stack
 ```
 
 ## Features
-### Mosquitto-Stack
+### Mosquitto Stack
+Mosquitto adalah salah product yg menggunakan MQTT Protocol. Penggunaan yg mudah dan ringan menjadikan mosquitto sangat sering digunakan.
 - Authentication user-password
 - Encryption password
 - Add user
@@ -53,17 +58,20 @@ $ cd iot-stack
 
 ## Roadmap
 ### In Progress
-- [ ] Work on Mosquitto-Stack
+- [ ] Work on Mosquitto Stack
     - [x] Native
     - [ ] Cpp
     - [ ] Nodejs
     - [ ] Python
-
-- [ ] Work on EMQX-Stack
-- [ ] Work on RabbitMQ-Stack
-- [ ] Work on Kafka-Stack
-- [ ] Work on Socket-Stack
-- [ ] Work on gGRPC-Stack
+- [ ] Work on API Gateway - MySQL Stack
+- [ ] Work on CoAP Stack
+- [ ] Work on Webhook - MySQL - Grafana Stack
+- [ ] Work on Webocket - MongoDB - Grafana Stack
+- [ ] Work on EMQX - InfluxDB - Telegraf Stack
+- [ ] Work on RabbitMQ - CrateDB - Grafana Stack
+- [ ] Work on Kafka Stack
+- [ ] Work on Redis - Elasticsearch - Kibana Stack
+- [ ] Work on gGRPC - CassandraDB - Grafana Stack
 
 ### Done ✓
 - [x] Create Readme.md
@@ -75,6 +83,6 @@ Distributed under the MIT License.
 
 ## Contact
 Tolong jangan segan untuk menghubungi saya melalui:
-- [Website](https://musuyaba.my.id)
 - <m.sulthon.yb@gmail.com>
 - [Telegram @musuyaba](https://t.me/musuyaba)
+- [Website](https://musuyaba.my.id) <sup><sub><sup><sub>Maaf, hosting murah 🙏</sub></sup></sub></sup>
