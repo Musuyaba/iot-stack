@@ -45,5 +45,4 @@ Distributed under the MIT License.
 Please, ask me anything on: 
 
 - [Website](https://musuyaba.my.id)
-- m.sulthon.yb@gmail.com 
 - [Telegram @musuyaba](https://t.me/musuyaba)

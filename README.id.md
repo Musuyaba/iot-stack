@@ -50,7 +50,7 @@ Mosquitto adalah salah product yg menggunakan MQTT Protocol. Penggunaan yg mudah
 - Logging Mosquitto Broker
 - Generate SSL Certificate
 - Securing connection using OpenSSL
-- Example on Cpp, Python, and Node.js
+- Example on Python
 
 ```bash
 /iot-stack$ cd mosquitto-stack
@@ -60,8 +60,6 @@ Mosquitto adalah salah product yg menggunakan MQTT Protocol. Penggunaan yg mudah
 ### In Progress
 - [ ] Work on Mosquitto Stack
     - [x] Native
-    - [ ] Cpp
-    - [ ] Nodejs
     - [ ] Python
 - [ ] Work on API Gateway - MySQL Stack
 - [ ] Work on CoAP Stack
@@ -83,6 +81,5 @@ Distributed under the MIT License.
 
 ## Contact
 Tolong jangan segan untuk menghubungi saya melalui:
-- <m.sulthon.yb@gmail.com>
 - [Telegram @musuyaba](https://t.me/musuyaba)
 - [Website](https://musuyaba.my.id) <sup><sub><sup><sub>Maaf, hosting murah 🙏</sub></sup></sub></sup>
